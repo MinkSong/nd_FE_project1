@@ -1,61 +1,34 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap");
+body{
+    font-size: 12px;
+}
 
-button {
-  margin: 0;
-  padding: 0.5rem 1rem;
-
-  font-family: "Noto Sans KR", sans-serif;
-  font-size: 1rem;
-  font-weight: 400;
-  text-align: center;
-  text-decoration: none;
-
-  display: inline-block;
-  width: auto;
-
-  border: none;
-  border-radius: 4px;
+h1{
+    font-size: 2em;
+}
+h2{
+    font-size: 1.3em;
+}
+h3{
+    font-size: 1.1em;
 }
 
 .container{
-    display:grid;
-    grid-template-columns: 90vw;  
-    grid-template-rows: 1fr 0.5fr 2fr 75vh 1fr;
-    grid-template-areas: 
-    "hd"
-    "mn"
-    "sd"
-    "ct"
-    "ft"; 
-    /* border: 2px solid red; */
-    align-content: center;
-    justify-content: center;
-   }
-/* .navigator {
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-template-rows: repeat(2,2fr);
-    grid-template-areas:
-    "home photo" 
-    "blog board";
-    justify-content: center;
-    align-content: center;
-    margin: 1px;
+        display:grid;
+        grid-template-columns: 90vw;  
+        grid-template-rows: 1fr 0.5fr 2fr 75vh 1fr;
+        grid-template-areas: 
+        "hd"
+        "mn"
+        "sd"
+        "ct"
+        "ft"; 
+        /* border: 2px solid red; */
+        align-content: center;
+        justify-content: center;
+    }
 
-    /* border: 2px solid black; */
-    } */
-.navigator {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        align-items: stretch;
-        align-content: stretch;
-        margin: 1px;
-    
-        /* border: 2px solid black; */
-        }
-@media (min-width:600px) and (max-width:1200px){
+@media (min-width:601px) and (max-width:1200px){
     .container{
         display:grid;
         grid-template-columns: 100px repeat(7,1fr);  
@@ -63,32 +36,11 @@ button {
         grid-template-areas: 
         "hd hd hd hd hd hd hd hd"
         "mn mn mn mn mn mn mn mn"
-        "sd ct ct ct ct ct ct ct"
+        "sd sd ct ct ct ct ct ct"
         "ft ft ft ft ft ft ft ft"; 
         /* border: 2px solid red; */
        }
-    .navigator {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        align-items: stretch;
-        align-content: stretch;
-        margin: 1px;
-    
-        /* border: 2px solid black; */
-        }
-    /* .navigator {
-        display: grid;
-        grid-template-columns: repeat(4,1fr);
-        grid-template-rows: 1fr;
-        grid-template-areas:
-        "home photo blog board";
-        justify-content: center;
-        align-content: center;
-        margin: 1px;
-        /* border: 2px solid black; */
-    } */
+
 }
 
 @media (min-width:1201px) {
@@ -99,32 +51,10 @@ button {
         grid-template-areas: 
         "hd hd hd hd hd hd hd hd"
         "mn mn mn mn mn mn mn mn"
-        "sd ct ct ct ct ct ct ct"
+        "sd sd ct ct ct ct ct ct"
         "ft ft ft ft ft ft ft ft"; 
         /* border: 2px solid red; */
        }
-    .navigator {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        align-items: stretch;
-        align-content: stretch;
-        margin: 1px;
-    
-        /* border: 2px solid black; */
-        }   
-    /* .navigator {
-        display: grid;
-        grid-template-columns: repeat(4,1fr);
-        grid-template-rows: 1fr;
-        grid-template-areas:
-        "home photo blog board";
-        justify-content: center;
-        align-content: center;
-        margin: 1px;
-        /* border: 2px solid black; */
-    }    */
 }
 
 
@@ -138,31 +68,6 @@ button {
  align-content: center; */
 }
 
-
-#navbox {
-    background: rgba(153, 207, 5, 0.596);
-    /* border: 1px solid red; */
-    display: grid;
-    justify-content: center;
-    align-content: center;
-    margin-inline: 1px;    
-    margin-block: 1px;
-}
-.nav1{
-    grid-area: home;
-    /* font-size: 2em; */
-}
-
-.nav2{
-    grid-area: photo;
-}
-.nav3{
-    grid-area: blog;
-}
-.nav4{
-    grid-area: board;
-}
-
 .header{
     grid-area: hd;
     display: grid;
@@ -174,17 +79,65 @@ button {
 }
 .menu {
     grid-area: mn;
-    display:flex;
-
-
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "home photo blog board";
 }
+
+#nav1{
+    grid-area: home;
+    /* font-size: 2em; */
+}
+
+#nav2{
+    grid-area: photo;
+}
+#nav3{
+    grid-area: blog;
+}
+#nav4{
+    grid-area: board;
+}
+
+
 .sidebar {
     grid-area: sd;
 }
 .content {
     grid-area: ct;
     padding: 10px;
+    display: grid;
+    grid-template-areas: 
+    "mp mp"
+    "card1 card2";
 }
+
+#content1 {
+    grid-area: mp;
+    /* border: 1px solid red; */
+}
+#card1 {
+    grid-area: card1;
+}
+
+#postcard1 {
+    object-fit: cover;
+    height:300px;
+    background-image: url("../img/back1.jpeg");
+}
+
+#card2 {
+    grid-area: card2;
+}
+
+#postcard2 {
+    object-fit: cover;
+    height:300px;
+    background-image: url("../img/card_background.jpg");
+}
+
 .footer {
     grid-area: ft;
     display: grid;
@@ -192,14 +145,15 @@ button {
 }
 
 .post {
-
+    font-size: 1em;
 }
 
 .title {
-    font-size: 2em;
+    font-size: 130%;
     color: blue;
     margin: 10px;
     font-family: sans-serif bold;
+
 }
 
 .article {
@@ -214,16 +168,23 @@ button {
 }
 
 .sd {
-
+    font-size: 100%;
 }
 
 #sdtop {
     display: grid;
-    justify-content: center;
+    justify-content: left;
     padding-top: 25px;
 }
 
 #sdbox {
     display: grid;
     justify-content: right;
+}
+
+q{
+    font-style: italic;
+}
+u{
+    font-color:red;
 }

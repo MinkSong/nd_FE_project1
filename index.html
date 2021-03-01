@@ -8,6 +8,9 @@
             name="viewport"
         />
         <link rel="stylesheet" href="./style/style.css">
+        <link rel="stylesheet" href="./style/menu_button.css">
+        <link rel="stylesheet" href="./style/nav_style.css">
+        
     </head>
 
     <body>
@@ -16,37 +19,91 @@
                 <h1>Ming's Blog</h1>
             </div> 
             <div class="menu">
-                <div class="navigator">
-                    <button class="nav1" id="navbox">Home</button>
-                    <button class="nav2" id="navbox">Post</buttton>
-                    <button class="nav3" id="navbox">Photo</buttton>
-                    <button class="nav4" id="navbox">Profile</buttton>
+                    <div id="nav1"><button class="button">Home</button></div>
+                    <div id="nav2"><button class="button disabled">photo</button></div>
+                    <div id="nav3"><button class="button disabled">board</button></div>
+                    <div id="nav4"><button class="button disabled">profile</button></div>
+                    <!-- <button class="button button2">Post</buttton>
+                    <button class="button button2">Photo</buttton>
+                    <button class="button button2">Profile</buttton> -->
                     <!-- <div class="nav1" id="navbox"><a href="./index.html">HOME</a></div>
                     <div class="nav2" id="navbox">PHOTOs</div>
                     <div class="nav3" id="navbox">BLOG</div>
                     <div class="nav4" id="navbox">BOARD</div> -->
-                </div>
             </div>
+            <!-- CARD section comes below -->
             <div class="sidebar box">
-                <div class="sd" id="sdtop">Root</div>
-
+                <div class="sd" id="sdtop">About Author</div>
+                <ul>Minkoo Song</ul>
+                <ul>Content Manager</ul>
+                <ul>Yonsei Univ.</ul>
+                <ul>Minkoo is very curious on everything, so he's now on course for "Front-end deloper nanodegree"</ul>
+                <ul><img src="./img/avatar.png" alt="this is avatar" width="80%" height="100%"></></ul>
+                
+                
                 <!-- <div class="sd" id="sdbox">Menu 1</div>
                 <div class="sd" id="sdbox">Menu 2</div>
                 <div class="sd" id="sdbox">Menu 3</div>
                 <div class="sd" id="sdbox">Menu 4</div> -->
             </div>
             <div class="content box">
-                <div class="post title"><a href="./blog_page.html">This is Post Title</a></div>
-                <div class="post article">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sit amet arcu elit. Etiam et odio lectus. Duis et orci vel elit venenatis posuere nec id nulla. Donec eleifend purus nisi, vel euismod nisi blandit et. Suspendisse commodo urna non ultrices commodo. Aliquam interdum nunc bibendum tortor mollis cursus. Maecenas sed est faucibus, pharetra ipsum vel, pretium quam. Phasellus nec velit eget sapien viverra facilisis.</p>
-                    <p>Vestibulum hendrerit  <h3><q>hendrerit lectus augue, sit amet pretium</q></h3>lectus augue, sit amet pretium enim cursus ut. Etiam euismod vulputate tincidunt. Donec maximus sem erat, a porttitor mi hendrerit vitae. Vivamus sed sem neque. Etiam non velit pellentesque, bibendum urna et, eleifend eros. Maecenas placerat blandit sapien, vel placerat massa laoreet sed. Ut tristique dolor id diam lacinia, id laoreet est porttitor. Ut at lorem quis ipsum consectetur dictum. Donec sit amet suscipit metus. Pellentesque ultrices ornare erat non laoreet.</p>
-                    <p>Aliquam maximus massa ultrices dui faucibus commodo. Vivamus at hendrerit arcu. Aliquam in arcu imperdiet, porta massa eu, viverra orci. Pellentesque eleifend quis augue sit amet ornare. Cras arcu mi, varius in elementum eget, varius sed sem. Nullam scelerisque nec elit sed finibus. Vivamus placerat gravida lacus, sit amet tincidunt metus porttitor sit amet. Aliquam ut velit mauris. Vestibulum eu nulla dictum, malesuada elit sit amet, maximus dolor.</p>
-                    
-                    
+                <div id="content1">
+                <!-- scontents section comes below -->
+                    <div class="post title"><a href="./blog_page.html"><h2><em>This is Post Title</em></h2></a></div>
+                    <div class="post article">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sit amet arcu elit. Etiam et odio lectus. Duis et orci vel elit venenatis posuere nec id nulla. Donec eleifend purus nisi, vel euismod nisi blandit et. Suspendisse commodo urna non ultrices commodo. Aliquam interdum nunc bibendum tortor mollis cursus. Maecenas sed est faucibus, pharetra ipsum vel, pretium quam. Phasellus nec velit eget sapien viverra facilisis.</p>
+                        <p>Vestibulum hendrerit</p>  
+                        <h3><q>hendrerit lectus augue, sit amet pretium</q></h3>lectus augue, sit amet pretium enim cursus ut. Etiam euismod vulputate tincidunt. Donec maximus sem erat, a porttitor mi hendrerit vitae. Vivamus sed sem neque. Etiam non velit pellentesque, bibendum urna et, eleifend eros. Maecenas placerat blandit sapien, vel placerat massa laoreet sed. Ut tristique dolor id diam lacinia, id laoreet est porttitor. Ut at lorem quis ipsum consectetur dictum. Donec sit amet suscipit metus. Pellentesque ultrices ornare erat non laoreet.</p>
+                        <p>Aliquam maximus massa ultrices dui faucibus commodo. Vivamus at <u>hendrerit arcu.</u> Aliquam in arcu imperdiet, porta massa eu, viverra orci. Pellentesque eleifend quis augue sit amet ornare. Cras arcu mi, varius in elementum eget, varius sed sem. Nullam scelerisque nec elit sed finibus. Vivamus placerat gravida lacus, sit amet tincidunt metus porttitor sit amet. Aliquam ut velit mauris. Vestibulum eu nulla dictum, malesuada elit sit amet, maximus dolor.</p>
+                    </div>
+                </div>
+                <div id="card1">
+                    <div class="post title"><a href="#"><h2><em>Photo Card</em></h2></a></div>
+                    <div class="post article" id="postcard1">
+                        <!-- <img 
+                        src="img/back1.jpeg"
+                        alt="this is image caption"
+                        width="100%"
+                        height="300px"
+                    /> -->
+                    </div>
+
+                </div>
+                <div id="card2">
+                    <div class="post title"><a href="#"><h2><em>Photo Card2</em></h2></a></div>
+                    <div class="post article">
+                        <img 
+                            src="img/card_background.jpg"
+                            alt="this is image caption"
+                            width="100%"
+                            height="300px"
+                        />
+                    </div>
+
                 </div>
             </div>
             <div class="footer box">
-                This is Nanodegree project first one
+                <strong>This is Nanodegree project first one</strong>
+                <div id="fb-root"></div>
+                    <script>(function(d, s, id) {
+                    var js, fjs = d.getElementsByTagName(s)[0];
+                    if (d.getElementById(id)) return;
+                    js = d.createElement(s); js.id = id;
+                    js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
+                    fjs.parentNode.insertBefore(js, fjs);
+                    }(document, 'script', 'facebook-jssdk'));</script>
+
+                    <!-- Your share button code -->
+                <div class="fb-share-button" 
+                data-href="https://www.your-domain.com/your-page.html" 
+                data-layout="button_count">
+                </div>
+                <a href="https://twitter.com/minkoosong?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @minkoosong</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                <div class="a2a_kit a2a_default_style">
+                    <a class="a2a_button_linkedin_share"></a>
+                </div>
+                
+                <script async src="https://static.addtoany.com/menu/page.js"></script>
             </div>
         </div>
     </body>
