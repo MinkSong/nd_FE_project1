@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap");
 body{
     font-size: 12px;
 }
@@ -104,6 +103,8 @@ h3{
 
 .sidebar {
     grid-area: sd;
+    display: flex;
+    flex-direction: column;
 }
 .content {
     grid-area: ct;
@@ -140,8 +141,9 @@ h3{
 
 .footer {
     grid-area: ft;
-    display: grid;
-    justify-content: right;
+    display: flex;
+    flex-direction: row-reverse;
+
 }
 
 .post {
