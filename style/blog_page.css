@@ -1,7 +1,7 @@
 .container{
     display:grid;
     grid-template-columns: 90vw;  
-    grid-template-rows: 1fr 0.5fr 2fr 75vh 1fr;
+    grid-template-rows: 1fr 0.5fr 2fr 5fr 1fr;
     grid-template-areas: 
     "hd"
     "mn"

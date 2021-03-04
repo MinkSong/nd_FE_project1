@@ -19,7 +19,7 @@ h3{
 .main{
         display:grid;
         grid-template-columns: 90vw;  
-        grid-template-rows: 1fr 0.5fr 2fr 75vh 1fr;
+        grid-template-rows: 1fr 0.5fr 2fr 5fr 1fr;
         grid-template-areas: 
         "hd"
         "mn"
@@ -65,7 +65,7 @@ h3{
  /* border: 1px solid blue; */
  background: white;
  margin: 1px;
- width: auto;
+ 
  /* display: grid;
  justify-content: center;
  align-content: center; */
