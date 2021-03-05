@@ -1,0 +1,19 @@
+body{
+    font-size: 12px;
+}
+
+h1{
+    font-size: 2em;
+}
+h2{
+    font-size: 1.3em;
+}
+h3{
+    font-size: 1.1em;
+}
+q{
+    font-style: italic;
+}
+u{
+    font-color:red;
+}

@@ -8,3 +8,17 @@
     margin-inline: 1px;    
     margin-block: 1px;
 }
+#nav_item01{
+    grid-area: home;
+    /* font-size: 2em; */
+}
+
+#nav_item02{
+    grid-area: photo;
+}
+#nav_item03{
+    grid-area: blog;
+}
+#nav_item04{
+    grid-area: board;
+}

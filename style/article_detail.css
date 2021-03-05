@@ -1,0 +1,17 @@
+#card1 {
+    grid-area: card1;
+}
+
+#postcard1 {
+    object-fit: cover;
+    height:300px;
+}
+
+#card2 {
+    grid-area: card2;
+}
+
+#postcard2 {
+    object-fit: cover;
+    height:300px;
+}
